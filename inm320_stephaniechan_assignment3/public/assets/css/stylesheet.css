@@ -1,6 +1,5 @@
-/* This is the original example. You can take all css styles from here. */
 body {
-  font-family: Quando, sans-serif;
+  font-family: "Quando", sans-serif;
   font-size: 15px;
   color: #787878;
 }
@@ -33,7 +32,7 @@ h1 {
   line-height: 1.3em;
   word-wrap: break-word;
   color: #111111;
-  font-size: 37px;
+  font-size: 37.5px;
 }
 
 h2 {
@@ -44,7 +43,7 @@ h2 {
   line-height: 1.3em;
   word-wrap: break-word;
   color: #111111;
-  font-size: 31px;
+  font-size: 30px;
 }
 
 h3 {
@@ -55,7 +54,7 @@ h3 {
   line-height: 1.3em;
   word-wrap: break-word;
   color: #111111;
-  font-size: 26px;
+  font-size: 27px;
 }
 
 h4 {
@@ -126,7 +125,7 @@ article {
 .post-title a {
   color: #324360;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 27px;
   font-weight: 900;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -165,7 +164,7 @@ footer {
 }
 .footer-social-links a {
   margin: 0 10px;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -248,7 +247,7 @@ footer {
   header nav li.menu-item-has-children > a::after {
     margin-left: 7px;
     font-family: "Font Awesome 5 Free";
-    font-size: 13px;
+    font-size: 13.5px;
     color: #324360;
     content: "\f078";
   }
@@ -280,7 +279,7 @@ footer {
   }
   .footer-social-links a span {
     display: inline;
-    font-size: 11px;
+    font-size: 10.5px;
   }
   .footer-social-links i {
     margin-right: 5px;

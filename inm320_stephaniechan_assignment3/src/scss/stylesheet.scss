@@ -1,6 +1,9 @@
-/* This is the original example. You can take all css styles from here. */
-$body-font: Quando, sans-serif;
+// font variables
+$body-font: 'Quando', sans-serif;
 $nav-font: 'Josefin Sans', sans-serif;
+$body-size: 15px;
+
+// colour variables
 $primary: #787878;
 $secondary: #989898;
 $nav-color: #324360;
@@ -15,7 +18,7 @@ $hover-color: #111111;
 
 body {
     font-family: $body-font;
-    font-size: 15px;
+    font-size: $body-size;
     color: $primary;
 }
 img {
@@ -46,27 +49,27 @@ a {
 
 h1 {
     @include heading-style;
-    font-size: 37px;
+    font-size: $body-size*2.5;
 }
 h2 {
     @include heading-style;
-    font-size: 31px;
+    font-size: $body-size*2;
 }
 h3 {
     @include heading-style;
-    font-size: 26px;
+    font-size: $body-size*1.8;
 }
 h4 {
     @include heading-style;
-    font-size: 21px;
+    font-size: $body-size*1.4;
 }
 h5 {
     @include heading-style;
-    font-size: 18px;
+    font-size: $body-size*1.2;
 }
 h6 {
     @include heading-style;
-    font-size: 15px;
+    font-size: $body-size;
 }
 
 
@@ -103,7 +106,7 @@ article {
     a {
         color: $nav-color;
         text-transform: uppercase;
-        font-size: 26px;
+        font-size: $body-size*1.8;
         font-weight: 900;
         margin-top: 15px;
         margin-bottom: 15px;
@@ -140,7 +143,7 @@ footer {
 
     a {
         margin: 0 10px;
-        font-size: 16px;
+        font-size: $body-size;
         letter-spacing: 1px;
         text-transform: uppercase;
 
@@ -149,7 +152,7 @@ footer {
 }
 #footer-copyright {
     padding: 20px 0;
-    font-size: 12px;
+    font-size: $body-size*0.8;
     color: $secondary;
 }
 
@@ -218,7 +221,7 @@ footer {
             color: $nav-color;
             letter-spacing: 1px;
             text-transform: uppercase;
-            font-size: 12px;
+            font-size: $body-size*0.8;
             font-weight: 900;
 
             &:hover { color: #35c4ce; }
@@ -228,7 +231,7 @@ footer {
     header nav li.menu-item-has-children > a::after {
         margin-left: 7px;
         font-family: 'Font Awesome 5 Free';
-        font-size: 13px;
+        font-size: $body-size*0.9;
         color: $nav-color;
         content: '\f078';
     }
@@ -263,7 +266,7 @@ footer {
             
             span {
                 display: inline;
-                font-size: 11px;
+                font-size: $body-size*0.7;
             }
         }
         i { margin-right: 5px; }
