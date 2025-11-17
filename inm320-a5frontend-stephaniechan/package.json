@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "lite-server --baseDir=\"public\"",
-    "watch": "sass --watch src/scss:public/assets/css",
+    "watch": "sass --watch scss:public/assets/css",
     "start": "concurrently \"npm run watch\" \"npm run dev\""
   },
   "author": "Stephanie Chan",
