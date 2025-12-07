@@ -1,5 +1,8 @@
+console.log("i'm linked!");
+
+
 async function loadJSON() {
-    const res = await fetch("./layout.json");
+    const res = await fetch("/assets/data/content.json");
     return await res.json();
 }
 

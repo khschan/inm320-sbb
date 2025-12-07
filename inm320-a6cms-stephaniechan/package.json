@@ -13,6 +13,7 @@
   "private": true,
   "description": "",
   "devDependencies": {
+    "bootstrap": "^5.3.8",
     "concurrently": "^9.2.1",
     "lite-server": "^2.6.1",
     "sass": "^1.94.2"
