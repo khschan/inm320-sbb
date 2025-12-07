@@ -1,0 +1,70 @@
+{
+    "site_name": "Assignment 6 - Headless CMS",
+    "email": "khschan@myseneca.ca",
+    "phone": "",
+    "side_nav": [
+        {
+            "url": "/tickets.html",
+            "text": "Tickets",
+            "icon": "ticket",
+            "link_id": "",
+            "link_class": "",
+            "new_tab": "false",
+            "sub_nav": []
+        },
+        {
+            "url": "/ideas.html",
+            "text": "Idea",
+            "icon": "lightbulb",
+            "link_id": "",
+            "link_class": "",
+            "new_tab": "false",
+            "sub_nav": []
+        },
+        {
+            "url": "/contacts.html",
+            "text": "Contacts",
+            "icon": "usergroup",
+            "link_id": "",
+            "link_class": "",
+            "new_tab": "false",
+            "sub_nav": []
+        },
+        {
+            "url": "/agents.html",
+            "text": "Agents",
+            "icon": "usertie",
+            "link_id": "",
+            "link_class": "",
+            "new_tab": "true",
+            "sub_nav": []
+        },
+        {
+            "url": "/articles.html",
+            "text": "Articles",
+            "icon": "book",
+            "link_id": "",
+            "link_class": "",
+            "new_tab": "false",
+            "sub_nav": []
+        },
+        {
+            "url": "/settings.html",
+            "text": "Settings",
+            "icon": "gear",
+            "link_id": "",
+            "link_class": "",
+            "new_tab": "false",
+            "sub_nav": []
+        },
+        {
+            "url": "/subscription.html",
+            "text": "Subscription",
+            "icon": "award",
+            "link_id": "",
+            "link_class": "",
+            "new_tab": "false",
+            "sub_nav": []
+        }
+    ]
+}
