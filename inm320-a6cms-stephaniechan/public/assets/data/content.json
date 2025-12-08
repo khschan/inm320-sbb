@@ -8,44 +8,44 @@
       {
         "pagename": "Overview",
         "icon": "/assets/images/icons/overview.svg",
-        "link": "#"
+        "link": "/overview.html"
       },
       {
         "pagename": "Tickets",
         "icon": "/assets/images/icons/tickets.svg",
-        "link": "#"
+        "link": "/tickets.html"
       },
       {
         "pagename": "Ideas",
         "icon": "/assets/images/icons/ideas.svg",
-        "link": "#"
+        "link": "/ideas.html"
       },
       {
         "pagename": "Contacts",
         "icon": "/assets/images/icons/contacts.svg",
-        "link": "#"
+        "link": "/contacts.html"
       },
       {
         "pagename": "Agents",
         "icon": "/assets/images/icons/agents.svg",
-        "link": "#"
+        "link": "/agents.html"
       },
       {
         "pagename": "Articles",
         "icon": "/assets/images/icons/articles.svg",
-        "link": "#"
+        "link": "/articles.html"
       }
     ],
     "bottom": [
       {
         "pagename": "Settings",
         "icon": "/assets/images/icons/settings.svg",
-        "link": "#"
+        "link": "/settings.html"
       },
       {
         "pagename": "Subscription",
         "icon": "/assets/images/icons/subscription.svg",
-        "link": "#"
+        "link": "/subscription.html"
       }
     ]
   },
@@ -76,6 +76,11 @@
     { "label": "Average first response time", "value": "33m" },
     { "label": "Average response time", "value": "3h 8m" },
     { "label": "Resolution within SLA", "value": "94%" }
+  ],
+
+  "infocards": [
+    { "header": "Unresolved tickets", "subhead": "View details" },
+    { "header": "Tasks", "subhead": "View all" }
   ],
 
   "tickets": [

@@ -48,8 +48,8 @@
         <!-- Tickets & Tasks -->
         <article class="row row-cols-9 fw-semibold">
             <section class="container-fluid col-md m-2 text-left bg-primary-subtle rounded">
-                <h5 class="text-dark">Unresolved tickets</h5>
-                <p class="col text-body-secondary"><small>View details</small></p>
+                <h5 class="text-dark" id="tickets-header">Unresolved tickets</h5>
+                <p class="col text-body-secondary" id="tickets-subhead"><small>View details</small></p>
                 <section class="row row-cols-auto justify-content-start">
                     <p class="col text-body-secondary"><small>Group: Support</small></p>
                 </section>
@@ -57,11 +57,11 @@
             </section>
 
             <section class="container-fluid col-md m-2 text-left bg-primary-subtle rounded">
-                <h5 class="text-dark">Tasks</h5>
-                <p class="col text-body-secondary"><small>View all</small></p>
-                    <section class="row row-cols-auto justify-content-start">
-                        <p class="col text-light-emphasis"><small>Today</small></p>
-                    </section>
+                <h5 class="text-dark" id="tasks-header">Tasks</h5>
+                <p class="col text-body-secondary" id="tasks-subhead"><small>View all</small></p>
+                <section class="row row-cols-auto justify-content-start">
+                    <p class="col text-light-emphasis"><small>Today</small></p>
+                </section>
                 <section id="tasks-list"></section>
             </section>
         </article>

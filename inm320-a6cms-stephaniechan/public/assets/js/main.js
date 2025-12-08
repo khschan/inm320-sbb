@@ -41,7 +41,7 @@ async function loadSidebar(data) {
     data.sidebar.bottom.forEach(item => {
         bottomList.innerHTML += `
             <li class="row p-2">
-                <a class="icon-link text-decoration-none text-reset" href="${item.href}">
+                <a class="icon-link text-decoration-none text-reset" href="${item.link}">
                     <img src="${item.icon}" height="16" width="16"> ${item.pagename}
                 </a>
             </li>`;
@@ -71,7 +71,7 @@ function loadOverviewCounters(data) {
     });
 }
 
-// creating function to load today's trend graph
+// creating function to load today's trend graph (section 2)
 function loadTrends(data) {
     // load date and graph image into html structure using textContent and src
     document.getElementById("trend-date").textContent = data.trends.date;
@@ -80,6 +80,7 @@ function loadTrends(data) {
 
 // creating function to create container for trend graph statistics section
 function loadStatistics(data) {
+    // locate load point for trend statistics in html
     const container = document.getElementById("stats");
     // use forEach loop to load statistics into each row
     data.statistics.forEach(item => {
@@ -91,7 +92,7 @@ function loadStatistics(data) {
     });
 }
 
-// create functions to populate info card sections
+// create functions to populate info card sections (section 3)
 // loading unresolved ticket stats
 function loadTickets(data) {
     // locate load point for info card stats in html
