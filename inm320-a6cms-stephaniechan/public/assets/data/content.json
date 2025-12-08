@@ -6,46 +6,46 @@
     },
     "main": [
       {
-        "label": "Overview",
+        "pagename": "Overview",
         "icon": "/assets/images/icons/overview.svg",
-        "href": "#"
+        "link": "#"
       },
       {
-        "label": "Tickets",
+        "pagename": "Tickets",
         "icon": "/assets/images/icons/tickets.svg",
-        "href": "#"
+        "link": "#"
       },
       {
-        "label": "Ideas",
+        "pagename": "Ideas",
         "icon": "/assets/images/icons/ideas.svg",
-        "href": "#"
+        "link": "#"
       },
       {
-        "label": "Contacts",
+        "pagename": "Contacts",
         "icon": "/assets/images/icons/contacts.svg",
-        "href": "#"
+        "link": "#"
       },
       {
-        "label": "Agents",
+        "pagename": "Agents",
         "icon": "/assets/images/icons/agents.svg",
-        "href": "#"
+        "link": "#"
       },
       {
-        "label": "Articles",
+        "pagename": "Articles",
         "icon": "/assets/images/icons/articles.svg",
-        "href": "#"
+        "link": "#"
       }
     ],
     "bottom": [
       {
-        "label": "Settings",
+        "pagename": "Settings",
         "icon": "/assets/images/icons/settings.svg",
-        "href": "#"
+        "link": "#"
       },
       {
-        "label": "Subscription",
+        "pagename": "Subscription",
         "icon": "/assets/images/icons/subscription.svg",
-        "href": "#"
+        "link": "#"
       }
     ]
   },

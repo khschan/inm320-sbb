@@ -1,15 +1,19 @@
-console.log("i'm linked!");
+// console.log("i'm linked!");
 
-
+// creating async / await function to fetch json
 async function loadJSON() {
-    const res = await fetch("/assets/data/content.json");
-    return await res.json();
+    const foobar = await fetch("/assets/data/content.json");
+    return await foobar.json();
 }
 
+// create function to load sidebar data
 async function loadSidebar(data) {
+
+    // defining sidebar variables
     const sidebar = document.getElementById("sidebar");
     const brand = data.sidebar.brand;
 
+    // creating logo and sidebar header section
     sidebar.innerHTML = `
         <section class="row">
             <img class="img-fluid col-2" src="${brand.logo}" alt="Logo" />
@@ -19,28 +23,32 @@ async function loadSidebar(data) {
         <ul id="sidebar-bottom"></ul>
     `;
 
+    // defining top and bottom sections in sidebar area
     const mainList = document.getElementById("sidebar-main");
     const bottomList = document.getElementById("sidebar-bottom");
 
+    // create forEach loop to populate each sidebar link in top section using innerHTML
     data.sidebar.main.forEach(item => {
         mainList.innerHTML += `
             <li class="row p-2">
-                <a class="icon-link text-decoration-none text-reset" href="${item.href}">
-                    <img src="${item.icon}" height="16" width="16"> ${item.label}
+                <a class="icon-link text-decoration-none text-reset" href="${item.link}">
+                    <img src="${item.icon}" height="16" width="16"> ${item.pagename}
                 </a>
             </li>`;
     });
 
+    // create forEach loop to populate each sidebar link in bottom section using innerHTML
     data.sidebar.bottom.forEach(item => {
         bottomList.innerHTML += `
             <li class="row p-2">
                 <a class="icon-link text-decoration-none text-reset" href="${item.href}">
-                    <img src="${item.icon}" height="16" width="16"> ${item.label}
+                    <img src="${item.icon}" height="16" width="16"> ${item.pagename}
                 </a>
             </li>`;
     });
 }
 
+// creating function to load top header content (title, user info)
 function loadHeader(data) {
     document.getElementById("header-title").textContent = data.header.title;
     document.getElementById("header-user").innerHTML = `
@@ -49,8 +57,11 @@ function loadHeader(data) {
     `;
 }
 
+// creating function to load overview statistics (section 1)
 function loadOverviewCounters(data) {
     const container = document.getElementById("overview-counters");
+
+    // using forEach loop to fill innerHTML for unresolved, overdue, open, and on hold ticket stats
     data.overviewCounters.forEach(item => {
         container.innerHTML += `
             <section class="container-fluid m-2 col-sm text-center bg-body border border-2 border-light-subtle rounded tickets">
@@ -60,13 +71,17 @@ function loadOverviewCounters(data) {
     });
 }
 
+// creating function to load today's trend graph
 function loadTrends(data) {
+    // load date and graph image into html structure using textContent and src
     document.getElementById("trend-date").textContent = data.trends.date;
     document.getElementById("trend-img").src = data.trends.image;
 }
 
+// creating function to create container for trend graph statistics section
 function loadStatistics(data) {
     const container = document.getElementById("stats");
+    // use forEach loop to load statistics into each row
     data.statistics.forEach(item => {
         container.innerHTML += `
             <section class="row p-3 border-bottom border-light-subtle">
@@ -76,8 +91,12 @@ function loadStatistics(data) {
     });
 }
 
+// create functions to populate info card sections
+// loading unresolved ticket stats
 function loadTickets(data) {
+    // locate load point for info card stats in html
     const container = document.getElementById("tickets-list");
+    // using forEach loop to populate each row with label and number
     data.tickets.forEach(item => {
         container.innerHTML += `
             <section class="row row-cols-auto justify-content-between p-2 border-bottom border-dark-subtle">
@@ -87,8 +106,11 @@ function loadTickets(data) {
     });
 }
 
+// loading tasks info card
 function loadTasks(data) {
+    // locate load point for info card stats in html
     const container = document.getElementById("tasks-list");
+    // using forEach loop to populate each row with label and number
     data.tasks.forEach(item => {
         container.innerHTML += `
             <section class="row row-cols-auto justify-content-between p-2 border-bottom border-dark-subtle">
@@ -98,6 +120,7 @@ function loadTasks(data) {
     });
 }
 
+// consolidate functions
 async function getData() {
     const data = await loadJSON();
     await loadSidebar(data);
@@ -107,6 +130,7 @@ async function getData() {
     loadStatistics(data);
     loadTickets(data);
     loadTasks(data);
-}
+} 
 
+// call function
 getData();
